@@ -118,8 +118,12 @@ header img {
 }
 
 /* second section */
+main {
+  display: flex;
+  flex-direction: column;
+}
 .main-section {
-  position: absolute;
+  /* position: absolute; */
   background-color: var(--off-white);
   width: 100%;
   min-width: 320px;
@@ -175,13 +179,13 @@ header img {
   margin-right: 87px;
   color: #ff9536;
   justify-self: start;
-  margin-right: 130px;
+  margin-right: 150px;
 }
 
 .table {
   border-radius: 8px;
   /* padding: 10px; */
-  width: 197px;
+  width: 255px;
   height: 159px;
   margin-top: 12px;
 }
@@ -191,7 +195,7 @@ header img {
   width: 52%;
 }
 .table-container {
-  width: 240px;
+  width: 260px;
   display: flex;
   align-items: center;
 }
@@ -235,8 +239,230 @@ header img {
   background-image: url(./assets/icons/right-arrow.svg);
   display: inline-block;
   width: 20px;
-  height: 10px;
+  height: 15px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 25px;
+  margin-left: 18px;
+  margin-top: 13px;
+}
+
+.main-table-description {
+  background-color: var(--soft-orange);
+  margin: 26px auto;
+  width: 192px;
+  height: 31px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-table-description--title,
+.main-table-description--text {
+  padding: 8px;
+  font-family: var(--ff-inter);
+  font-size: 1.3rem;
+  line-height: 14.53px;
+}
+
+.main-table-description--title {
+  font-weight: var(--fw-700);
+  padding-right: 0;
+}
+.main-table-description--text {
+  padding-left: 5px;
+}
+
+/* cards section */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 46px;
+}
+.cards-section {
+  background-color: var(--black);
+  width: 100%;
+  min-width: 320px;
+
+  height: auto;
+}
+
+.cards-container--texts {
+  width: 288px;
+  height: 94px;
+  margin: 64px 15px 32px;
+}
+
+.cards-title {
+  font-size: 2.4rem;
+  color: var(--just-white);
+  text-align: center;
+  font-weight: var(--fw-700);
+  margin-bottom: 24px;
+  line-height: 2.6rem;
+}
+
+.cards-subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #808080;
+  font-weight: var(--fw-500);
+  line-height: 1.8rem;
+}
+
+.card {
+  width: 288px;
+  height: 152px;
+  background-color: var(--warm-black);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.card img {
+  width: 20px;
+  height: 20px;
+  margin: 16px 0 0 16px;
+}
+.card span {
+  font-size: 1.8rem;
+  font-weight: var(--fw-700);
+  color: var(--just-white);
+  line-height: 18px;
+  margin: 12px 0 0 16px;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: var(--fw-500);
+  line-height: 18px;
+  color: #808080;
+  margin: 10px 20px 22px 16px;
+}
+
+/* img container */
+.img-container {
+  background-image: url(./assets/img/bitcoinbaby2x.jpg);
+  width: 516px;
+  height: 387px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img-container--title {
+  position: absolute;
+  top: 64px;
+  width: 288px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: var(--fw-700);
+  line-height: 2.4rem;
+  color: var(--just-white);
+}
+
+/* plan section */
+
+.plans-section {
+  background-color: var(--off-white);
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plans-container--texts {
+  width: 288px;
+  max-width: 900px;
+  width: 90%;
+  margin: 64px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.plans-container--texts p {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: var(--fw-700);
+  color: var(--black);
+  line-height: 2.6rem;
+}
+.plans-container--texts span {
+  margin-top: 24px;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plans-cards {
+  display: flex;
+}
+
+.plan-card {
+  position: relative;
+  width: 190px;
+  height: 247px;
+  background-color: var(--just-white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  margin: 20px 8px;
+  border-radius: 8px;
+}
+
+.plan-card .top {
+  position: absolute;
+  width: 101px;
+  height: 31px;
+  background: var(--bitcoin-orange);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(50% - 50px);
+  top: -16px;
+  padding: 8px;
+}
+.top p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: var(--fw-700);
+  color: var(--just-white);
+}
+.price-description {
+ width: 73px;
+height: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 31px auto 0 ;
+}
+
+.price-description p{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: var(--fw-500);
+  color: #000000;
+}
+.price{
+  width: 77px;
+  height: 56px;
+  margin: 8px auto;
+
+}
+.price--number{
+  font-size: 5.2rem;
+  line-height: 6.3rem;
+  font-weight: var(--fw-700);
+  color: #000000;
+  font-family: var(--ff-inter);
+  letter-spacing: -0.08rem;
 }
