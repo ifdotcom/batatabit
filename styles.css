@@ -379,6 +379,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 64px;
 }
 .plans-container--texts {
   width: 288px;
@@ -438,31 +439,118 @@ main {
   color: var(--just-white);
 }
 .price-description {
- width: 73px;
-height: 18px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 31px auto 0 ;
+  width: 73px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 31px auto 0;
 }
 
-.price-description p{
+.price-description p {
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: var(--fw-500);
   color: #000000;
 }
-.price{
+.price {
   width: 77px;
   height: 56px;
   margin: 8px auto;
-
 }
-.price--number{
+.price--number {
   font-size: 5.2rem;
   line-height: 6.3rem;
   font-weight: var(--fw-700);
   color: #000000;
   font-family: var(--ff-inter);
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.5rem;
+}
+
+.price-symbol {
+  position: absolute;
+  top: 66px;
+  left: 52px;
+  font-size: 1.2rem;
+  font-weight: var(--fw-500);
+  line-height: 1.5rem;
+  color: #363636;
+}
+
+.plan-description {
+  margin: 16px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.plan-description p {
+  width: 158px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: var(--fw-500);
+  color: #757575;
+}
+
+.plan--button {
+  display: inline-block;
+  width: 151px;
+  height: 48px;
+  background-color: var(--off-white);
+  margin: 0 20px;
+  padding: 12px 16px;
+
+  text-decoration: none;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-weight: var(--fw-700);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan--button span {
+  background-image: url(./assets/icons/orange-right-arrow.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 4px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  min-width: 320px;
+  height: 150px;
+  background: var(--bitcoin-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer--links {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.footer--links a {
+  font-weight: var(--fw-500);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--just-white);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-icon{
+  background-image: url(./assets/img/logo-footer.svg);
+  width: 64px;
+  height: 50px;
 }
